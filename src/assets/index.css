@@ -1,0 +1,27 @@
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+a {
+  color: black;
+  text-decoration-color: #ffdf00;
+  text-underline-position: under;
+}
+
+ul {
+  list-style-type: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,239 @@
+.preloader-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  transition: opacity 0.8s;
+  opacity: 1;
+}
+
+.preloader {
+  align-self: center;
+}
+
+.video-container {
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.video-container video {
+  z-index: -1;
+  position: absolute;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-aspecto-ratio: 16/9) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspecto-ratio: 16/9) {
+  video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.scrolldown-icon-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 15px;
+}
+
+.content-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .content-box {
+    padding-bottom: 60px;
+  }
+}
+
+.content-box p {
+  color: white;
+  font-size: 30px;
+  margin: 0;
+}
+
+.centered-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-align-center-container {
+  width: 100%;
+  max-width: 580px;
+}
+
+.text-align-center {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.author {
+  font-size: 0.75em;
+  margin-top: 0.375em;
+}
+
+.logo-feedback-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.logo-feedback {
+  width: 100px;
+  height: 0.8em;
+}
+
+.people-email {
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+/* Tab Container */
+
+.tab-container {
+  padding: 18.75px;
+  padding-top: 75px;
+  display: flex;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.tab-container ul li::before {
+  content: '— ';
+}
+
+.tab-container ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tab-container ul li p {
+  text-align: left;
+  padding-left: 5px;
+  margin: 0;
+}
+
+.tab-container ul {
+  margin: 0;
+}
+
+.nav-icon {
+  right: 0;
+  top: 0;
+  margin: 30px 30px;
+  position: fixed;
+  z-index: 100000;
+  width: 50px;
+  height: 20px;
+  padding-top: 15px;
+  opacity: 0.8;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-icon span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.nav-icon.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* Fade Effect */
+.fullpage-wrapper {
+  width: 100vw !important;
+  transform: none !important;
+}
+
+.fp-section {
+  width: 100% !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+  transition: all 1.2s ease-in-out;
+}
+
+.fp-section.active {
+  position: absolute !important;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
