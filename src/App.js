@@ -9,11 +9,11 @@ import Home from './views/Home';
 import Welcome from './views/Welcome';
 import Darwin from './views/Darwin';
 import Blockchain from './views/Blockchain';
-import ContaBlack from './views/ContaBlack';
+//import ContaBlack from './views/ContaBlack';
 import Tokenization from './views/Tokenization';
 import Contact from './views/Contact';
-import Pillars from './views/Pillars';
-import Stages from './views/Stages';
+//import Pillars from './views/Pillars';
+//import Stages from './views/Stages';
 import Monnos from './views/Monnos';
 import People from './views/People';
 // Videos
@@ -75,9 +75,9 @@ const App = () => {
               <Welcome />
               <Darwin />
               <Blockchain />
-              <ContaBlack />
+             {/* <ContaBlack />
               <Pillars />
-              <Stages />
+              <Stages /> */}
               <Video
                 autoPlay={autoPlay}
                 srcMp4="https://res.cloudinary.com/colb/video/upload/v1583527361/Videos/video2_oxtkp4.mp4"
